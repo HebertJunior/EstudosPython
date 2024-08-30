@@ -1,0 +1,29 @@
+'''
+ RA: Hebert Lamounier Barbosa Júnior
+ DATA: 24/08/24
+ ATIVIDADE: Atividade 10
+ 
+ ROTEIRO: ROTEIRO_PYTHON_01
+ TURMA: (TERÇA)
+ Nome do arquivo: Atividade_10_5162454_Hebert Lamounier Barbosa Júnior_24_08.py
+'''
+idade = int(input("Digite sua idade:"))
+
+if idade >= 18 and idade <= 65:
+     #não se usa && e sim a x < variavel > y ou and
+    print("Sua idade está dentro do intervalo")
+    if (idade < 65 and idade > 18):
+        print("Está apto a trabalhar")
+    elif idade >= 65:
+        print("Recomenda-se aposentar")
+        #não existe else if e sim
+else:
+    print("Sua idade não está dentro do intervalo")
+
+
+
+ 
+
+
+
+

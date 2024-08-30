@@ -1,0 +1,44 @@
+'''
+ RA: Hebert Lamounier Barbosa Júnior
+ DATA: 26/08/24
+ ATIVIDADE: Atividade 07
+ ROTEIRO: ROTEIRO_PYTHON_02
+ TURMA: (TERÇA)
+ Nome do arquivo: Atividade_07_5162454_Hebert Lamounier Barbosa Júnior_26_08.py
+'''
+temperatura = float(input("Digite a temperatura desejada: "))
+escala = int(input("\nDigite a escala da temperatura atual: \n1 - Celsius\n2 - Fahrenheit\n3 - Kelvin\n\n Opção:"))
+op = int(input("\nSelecione a escala para a qual deseja transformar: \n1 - Celsius\n2 - Fahrenheit\n3 - Kelvin\n\n Opção:"))
+
+if op == 1:  
+    if escala == 1:
+        print("\nA temperatura já está em Celsius e é", temperatura, "C")
+    elif escala == 2:
+        temperatura = (temperatura - 32) * 5/9
+        print("\nA temperatura em Celsius é", temperatura, "C")
+    elif escala == 3:
+        temperatura = temperatura - 273.15
+        print("\nA temperatura em Celsius é", temperatura, "C")
+
+elif op == 2:  
+    if escala == 1:
+        temperatura = temperatura * 9/5 + 32
+        print("\nA temperatura em Fahrenheit é", temperatura, "F")
+    elif escala == 2:
+        print("\nA temperatura já está em Fahrenheit e é", temperatura, "F")
+    elif escala == 3:
+        temperatura = 1.8 * (temperatura - 273.15) + 32
+        print("\nA temperatura em Fahrenheit é", temperatura, "F")
+
+elif op == 3:  
+    if escala == 1:
+        temperatura = temperatura + 273.15
+        print("\nA temperatura em Kelvin é", temperatura, "K")
+    elif escala == 2:
+        temperatura = (temperatura + 459.67) * 5/9
+        print("\nA temperatura em Kelvin é", temperatura, "K")
+    elif escala == 3:
+        print("\nA temperatura já está em Kelvin e é", temperatura, "K")
+
+else:
+    print("\nDigite uma opção válida")

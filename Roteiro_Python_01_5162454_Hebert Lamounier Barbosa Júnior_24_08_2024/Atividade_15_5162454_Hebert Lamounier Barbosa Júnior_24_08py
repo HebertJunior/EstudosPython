@@ -1,0 +1,26 @@
+'''
+ RA: Hebert Lamounier Barbosa Júnior
+ DATA: 24/08/24
+ ATIVIDADE: Atividade 15
+ ROTEIRO: ROTEIRO_PYTHON_01
+ TURMA: (TERÇA)
+ Nome do arquivo: Atividade_15_5162454_Hebert Lamounier Barbosa Júnior_24_08.py
+'''
+print("SIMULADOR DE INVESTIMENTOS")
+valorin = float(input("Digite o valor inicial de seu investimento: \n"))    
+taxa = float(input("Digite a taxa de juros estimada: (Se 10 = 10%)  "))/100
+tempo = float(input("Digite o tempo de investimento desejado:  "))
+print((1 + taxa))
+valorf = valorin * (1 + taxa)**tempo
+valorf = round(valorf,2)
+print("Seu investimento de R$", valorin, "rende no final de", tempo, "anos: R$")  
+
+
+
+
+
+ 
+
+
+
+
