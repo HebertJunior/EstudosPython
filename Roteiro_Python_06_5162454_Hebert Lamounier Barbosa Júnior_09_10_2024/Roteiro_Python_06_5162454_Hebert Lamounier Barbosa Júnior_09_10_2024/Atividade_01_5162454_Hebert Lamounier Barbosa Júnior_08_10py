@@ -1,0 +1,16 @@
+'''
+ RA: Hebert Lamounier Barbosa Júnior
+ DATA: 10/10/24
+ ATIVIDADE: Atividade 01
+ ROTEIRO: ROTEIRO_PYTHON_06
+ TURMA: (TERÇA)
+ Nome do arquivo: Atividade_01_5162454_Hebert Lamounier Barbosa Júnior_10_10.py
+'''
+
+def harmrec(n):
+    if n == 0:
+        return 0
+    else:
+        return 1/n + harmrec(n - 1)
+    
+print(f"O número é: {round(harmrec(5),3)}")

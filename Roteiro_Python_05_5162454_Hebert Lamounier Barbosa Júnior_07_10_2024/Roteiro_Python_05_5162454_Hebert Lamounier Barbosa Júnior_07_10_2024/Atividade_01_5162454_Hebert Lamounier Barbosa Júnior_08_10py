@@ -1,0 +1,35 @@
+'''
+ RA: Hebert Lamounier Barbosa Júnior
+ DATA: 08/10/24
+ ATIVIDADE: Atividade 01
+ ROTEIRO: ROTEIRO_PYTHON_05
+ TURMA: (TERÇA)
+ Nome do arquivo: Atividade_01_5162454_Hebert Lamounier Barbosa Júnior_08_10.py
+'''
+
+def fim_no_inicio (lista):
+    l = int(len(lista))
+    m = l//2
+    o = int(0)
+    i = m
+
+    print(f"Lista inicial: {lista}")
+    
+    lista2 = []
+    lista3 = []
+
+    while i < l:
+        lista2.append(lista[i])
+        i += 1
+    
+    i = m #volta o i a m
+
+    while o < m:
+        lista3.append(lista[o])
+        o += 1
+    
+    lista = lista2 + lista3
+    print(f"Lista modificada: {lista}")
+
+listay = [1,2,3,4,5]
+fim_no_inicio(listay)
